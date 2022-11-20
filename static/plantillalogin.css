@@ -1,0 +1,130 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: goldenrod;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+}
+
+.sidenav {
+    height: 100%;
+    background-color: darkred;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.ss {
+    position: absolute;
+    margin-top: 15%;
+    width: 300px;
+    background-color: rgb(207, 170, 74);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.er {   
+    position: relative;
+    background-color: rgb(219, 46, 69);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+
+}
+
+
+
+.sl{
+    
+    margin-left: 10%;
+    align-content:center;
+    justify-content: center;
+    width: 600px;
+    margin-bottom: 40px;
+    
+    color: rgb(0, 0, 0);
+}
+
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 600px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: darkred !important;
+    color: #fff;
+}
+
+
+.inc {
+    position: relative;
+    background-color: rgb(204, 85, 55);
+    border: 2px solid white;
+    padding: 1% 2%;
+    border-radius: 5px;
+
+}
+.inc:hover, .inc:active {
+    position: relative;
+    background-color: rgb(204, 85, 55);
+    border: 2px solid rgb(207, 11, 197);
+    border-radius: 5px;
+
+
+}
+

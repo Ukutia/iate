@@ -1,0 +1,112 @@
+header {
+    background-color: #3465BA;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 100%;
+    height: 7.5%;
+    margin: auto;
+}
+#Iateh1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#logousm {
+    height : 100%;
+    margin-left: -95%;
+}
+.buttonxd {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.3s;
+    position: relative;
+    top: 70px;
+    border: 5px solid goldenrod;
+    color: white;
+    padding: 17% 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 125%;
+    margin: auto;
+    cursor: pointer;
+    background-color: darkred;
+    border-radius: 12px;
+    margin-left: 60px;  
+}
+.buttonxd:hover {
+    color: gold;
+    border: 5px solid rgb(0, 102, 255);
+
+}
+body {
+    justify-content: space-between;
+    position: relative;
+    top: 70px;
+    background-color: goldenrod;
+    color: darkred;
+    margin: auto;
+}
+.loginxd {
+    position: absolute;
+    top: 20%;
+    right: 13%;
+}
+
+.salirr{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+
+}
+.salirr:link, .salirr:visited {
+    background-color: darkred;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5% 1%;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.loginxd:link, .loginxd:visited {
+    background-color: darkred;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5% 1%;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.loginxd:hover, .loginxd:active {
+    background-color: red;
+    color: white;
+}
+.nombreuser {
+    position: absolute;
+    top: 8%;
+    right: 10%;
+}
+.registerxd {
+    position: absolute;
+    top: 20%;
+    right: 2.5%;
+}
+.registerxd:link, .registerxd:visited {
+    background-color: darkred;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5% 1%;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.registerxd:hover, .registerxd:active {
+    background-color: red;
+    color: white;
+}

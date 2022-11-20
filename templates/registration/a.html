@@ -1,0 +1,39 @@
+{% load static %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'registerplantilla.css' %}">
+</head>
+
+<div class="sidenav">
+    <div class="login-main-text">
+       <h2><a href="{% url 'IAteHome' %}">IAteHome</a><br>register page</h2>
+       <p>crea tu cuenta</p>
+    </div>
+ </div>
+ <div class="main">
+    <div class="col-md-6 col-sm-12">
+       <div class="login-form">
+        <form method="POST" action=""> 
+            {%csrf_token%}
+            {{form.as_p}}
+        
+            <input type="submit" name="Create User">
+        </form>
+        <h4>
+            Ya tengo una cuenta<br><br>
+            <a class="buttonxd" href="{% url 'login' %}">Iniciar Sesion</a>
+        
+        </h4>
+        
+       </div>
+    </div>
+ </div>
+
+{% endblock %}

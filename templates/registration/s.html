@@ -1,0 +1,40 @@
+<div class="sidenav">
+    <div class="login-main-text">
+       <h2><a href="{% url 'inicio' %}">IAteHome</a><br>Login Page</h2>
+       <p>Inicia Sesión</p>
+    </div>
+ </div>
+ <div class="main">
+    <div class="ss">
+        <div class="sl">
+            <div class="col-md-6 col-sm-12">
+                <div class="login-form">
+                <form class="form-content" enctype="multipart/form-data" method="POST">
+            {% csrf_token %}
+            <label for="usuario">
+                Usuario
+                <input	type="text" name="username">
+            </label>
+            <br><br>
+            <label for="pass">
+                Contraseña
+                <input type="password" name="password">
+            </label>
+            <br><br>
+            <button type="submit" class="inc">Iniciar Sesion</button>
+        </form>
+
+    </div>
+    <small>
+        {% for message in messages %}
+        <p class = "er" id="messages">{{message}}</p>
+        {% endfor %}
+    </small>
+    <h6>
+        No tienes cuenta?
+        <a class="buttonxd" href="{% url 'registro' %}">Registrarse Aqui</a>
+    </h6>
+    
+
+        
+</div>

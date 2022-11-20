@@ -1,0 +1,36 @@
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" type="text/css" href="{% static 'IAteHomeStyles.css' %}">
+<head>
+    <meta charset="utf-8"/>
+    <title>IAte</title>
+</head>
+<header>
+    <h1 id="Iateh1">IAte</h1>
+    {% if user.is_authenticated %}
+                <a class=salirr href="{% url 'salir' %}">Salir</a>
+                <h4 class=nombreuser>Hola, {{ user.username }}</h4>
+            {% else %}
+                <a class=loginxd href="{% url 'login' %}">Iniciar Sesion</a>
+                <a class=registerxd href="{% url 'registro' %}">Registrarse</a>
+            {% endif %}
+    <img id="logousm" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-usm-svg.svg" alt="Logo USM">
+</header>
+<body>
+    <nav>
+        <ul>
+            <button class="buttonxd">
+                {% for message in messages %}
+                <pid="messages">{{message}}</p>
+                {% endfor %}
+            </button>
+            <button class="buttonxd">Func 2</button>
+            <button class="buttonxd">Func 3</button>
+        </ul>
+    </nav>
+</body>
+</html>
+{% endblock %} 
